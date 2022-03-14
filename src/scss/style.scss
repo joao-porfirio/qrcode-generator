@@ -1,0 +1,121 @@
+.main{
+
+    &__container{
+        background-color: #add8e6;
+        max-height: 100vh;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    &__texto-qr{
+        display: flex;
+        justify-content: space-evenly;
+        height: 80%;
+        width: 70%;
+        flex-direction: column;
+    }
+    &__logo{
+        text-align: left;
+        font-size: 3.5rem;
+        margin-left: 45px;
+    }
+    &__informacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__campo{
+        border: none;
+        background: transparent;
+        outline: none;
+        font-size: 4.5rem;
+        text-align: center;
+
+        &:hover{
+            border: none;
+        }
+    }
+    &__span{
+        margin-top: 15px;
+    }
+    &__qr-conteudo{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        max-height: 100%;
+        width: 30%;
+        margin: 20px 20px 20px 20px;
+        background: #0e0872;
+        border-radius: 30px;
+    }
+    &__button_download button{
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+}
+
+.qr-code{
+    display: flex;
+    justify-content: center;
+
+    &__forma{
+        // margin-top: 30px;
+    }
+
+    &__frame{
+        max-width: 100%;
+        margin: 0 10%;
+    }
+}
+
+.frame{
+    
+    &__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+    &__options{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__option{
+        margin: 0 4px;
+    }
+    &__descricao{
+        color: #fff;
+        font-size: 2rem;
+    }
+    &__expandir{ 
+        color: #fff;
+        font-size: 2rem;
+    }
+    &__icons-qr-type{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__cores{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__cores-tipo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__buttons_renderizacao{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
