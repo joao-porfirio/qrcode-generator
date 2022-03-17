@@ -1,3 +1,27 @@
+@font-face {
+  font-family: Inter-Regular;
+  src: url("../assets/fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: Inter-Media;
+  src: url("../assets/fonts/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: Inter-Semi;
+  src: url("../assets/fonts/Inter-SemiBold.ttf");
+}
+@font-face {
+  font-family: Inter-Bold;
+  src: url("../assets/fonts/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: Lexend-Media;
+  src: url("../assets/fonts/LexendDeca-Medium.ttf");
+}
+@font-face {
+  font-family: Lexend-Semi;
+  src: url("../assets/fonts/LexendDeca-SemiBold.ttf");
+}
 .main__container {
   background-color: #add8e6;
   max-height: 100vh;
@@ -6,6 +30,11 @@
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 767.98px) {
+  .main__container {
+    flex-direction: column-reverse;
+  }
+}
 .main__texto-qr {
   display: flex;
   justify-content: space-evenly;
@@ -13,10 +42,36 @@
   width: 70%;
   flex-direction: column;
 }
+@media (max-width: 767.98px) {
+  .main__texto-qr {
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+}
+.main__logo-conteudo {
+  display: flex;
+  align-items: center;
+  margin: 0 6%;
+}
+@media (max-width: 767.98px) {
+  .main__logo-conteudo {
+    display: none;
+  }
+}
 .main__logo {
   text-align: left;
   font-size: 3.5rem;
   margin-left: 45px;
+  font-family: Lexend-Media;
+}
+@media (max-width: 767.98px) {
+  .main__logo {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-left: 0;
+  }
 }
 .main__informacoes {
   display: flex;
@@ -30,12 +85,25 @@
   outline: none;
   font-size: 4.5rem;
   text-align: center;
+  font-family: Inter-Bold;
 }
 .main__campo:hover {
   border: none;
 }
+@media (max-width: 767.98px) {
+  .main__campo {
+    font-size: 2.5rem;
+  }
+}
 .main__span {
-  margin-top: 15px;
+  margin-top: 5px;
+  font-size: 1.8rem;
+  font-family: Inter-Media;
+}
+@media (max-width: 767.98px) {
+  .main__span {
+    font-size: 1.5rem;
+  }
 }
 .main__qr-conteudo {
   display: flex;
@@ -47,14 +115,32 @@
   background: #0e0872;
   border-radius: 30px;
 }
+@media (max-width: 767.98px) {
+  .main__qr-conteudo {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+  }
+}
 .main__button_download button {
   padding: 15px;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
+  font-family: Inter-Semi;
+}
+@media (max-width: 767.98px) {
+  .main__button_download button {
+    margin: 20px 0;
+  }
 }
 
 .qr-code {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 767.98px) {
+  .qr-code__forma {
+    margin: 25px 0;
+  }
 }
 .qr-code__frame {
   max-width: 100%;
@@ -105,6 +191,20 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.frame__label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-family: Inter-Media;
+}
+.frame__botao {
+  font-family: Inter-Media;
+  font-size: 1.3rem;
+}
+
+.accordion-button {
+  font-family: Inter-Semi;
+  font-size: 1.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
