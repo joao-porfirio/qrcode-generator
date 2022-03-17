@@ -5,7 +5,7 @@ import '../css/style.css'
 import QRCode from 'qrcode.react';
 import { CAccordion, CAccordionItem, CAccordionBody, CAccordionHeader, CButton } from '@coreui/react';
 import qrcode1 from '../../src/assets/icons/qr-code.png'
-
+import logo from '../assets/icons/logo.png'
 export const Main = () => {
     //DOCS
     //https://www.npmjs.com/package/qrcode.react
@@ -28,23 +28,24 @@ export const Main = () => {
         aEl.click();
         document.body.removeChild(aEl);
     }
-    
+
     return (
         <main className="main">
             <section className="main__container">
                 <article className="main__texto-qr">
-                    <div>
-                        <h1 className="main__logo">JP</h1>
+                    <div className="main__logo-conteudo">
+                        <img className="main__icon" src={logo} alt="logo" />
+                        <h1 className="main__logo">Gerador de QR CODE Automático!</h1>
                     </div>
 
                     <div className="main__informacoes">
                         <input
                             className="main__campo"
                             type="text"
-                            placeholder="Digite o conteúdo"
+                            placeholder="Digite aqui o conteúdo"
                             onChange={(e) => setCampoQR(e.target.value)}
                         />
-                        <span className="span">O QR Code será gerado automaticamente!</span>
+                        <span className="main__span">O QR Code será gerado automaticamente!</span>
                     </div>
                 </article>
                 <article className="main__qr-conteudo .qr-code">
@@ -84,11 +85,11 @@ export const Main = () => {
                                 <CAccordionBody>
                                     <div className="frame__cores">
                                         <article className="frame__cores-tipo">
-                                            <label for="bg-c">Cor Fundo</label>
+                                            <label htmlFor="bg-c" className="frame__label">Cor Fundo</label>
                                             <input type="color" name="bg-c" value={corFundoFrame} onChange={(e) => setCorFundoFrame(e.target.value)} />
                                         </article>
                                         <article className="frame__cores-tipo">
-                                            <label for="fg-c">Cor Forma</label>
+                                            <label htmlFor="fg-c" className="frame__label">Cor Forma</label>
                                             <input type="color" name="fg-c" value={corFormaFrame} onChange={(e) => setCorFormaFrame(e.target.value)} />
                                         </article>
                                     </div>
@@ -99,19 +100,19 @@ export const Main = () => {
                         <CAccordion>
                             <CAccordionItem itemKey={1}>
                                 <CAccordionHeader>
-                                    RENDERIZACAO
+                                    RENDERIZAÇÃO
                                 </CAccordionHeader>
                                 <CAccordionBody>
                                     <article className="frame__buttons_renderizacao">
-                                        <CButton color="primary" shape="rounded-pill" value={"svg"} onClick={(e) => setRenderizacao(e.target.value)}>SVG</CButton>
-                                        <CButton color="primary" shape="rounded-pill" value={"canvas"} onClick={(e) => setRenderizacao(e.target.value)}>CANVAS</CButton>
+                                        <CButton color="primary" shape="rounded-pill" value={"svg"} className="frame__botao" onClick={(e) => setRenderizacao(e.target.value)}>SVG</CButton>
+                                        <CButton color="primary" shape="rounded-pill" value={"canvas"} className="frame__botao" onClick={(e) => setRenderizacao(e.target.value)}>CANVAS</CButton>
                                     </article>
                                 </CAccordionBody>
                             </CAccordionItem>
                         </CAccordion>
                     </div>
                     <div className="main__button_download">
-                        <CButton color="info" shape="rounded-pill" onClick={downloadQRCode}>DOWNLOAD</CButton>
+                        <CButton color="info" shape="rounded-pill" onClick={downloadQRCode}>Baixar QR Code</CButton>
                     </div>
                 </article>
             </section>
