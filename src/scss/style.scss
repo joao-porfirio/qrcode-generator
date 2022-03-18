@@ -45,7 +45,7 @@ $lexend-semi: Lexend-Semi;
         flex-direction: row;
 
         @include for-phone-only{
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
     }
     &__texto-qr{
@@ -59,7 +59,10 @@ $lexend-semi: Lexend-Semi;
             max-width: 100%;
             width: 100%;
             justify-content: flex-start;
-            margin-top: 30px;
+            margin-top: 15px;
+            padding: 10px;
+            max-height: 30vh;
+            height: auto;
         }
     }
     &__logo-conteudo{
@@ -68,7 +71,7 @@ $lexend-semi: Lexend-Semi;
         margin: 0 6%;
 
         @include for-phone-only{
-            display: none;
+            margin: 0 4%;
         }
     }
     &__logo{
@@ -78,9 +81,8 @@ $lexend-semi: Lexend-Semi;
         font-family: $lexend-media;
 
         @include for-phone-only{
-            text-align: center;
-            font-size: 3.5rem;
-            margin-left: 0;
+            font-size: 2rem;
+            margin-left: 10px;
         }
     }
     &__informacoes{
@@ -88,6 +90,10 @@ $lexend-semi: Lexend-Semi;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        @include for-phone-only{
+            margin-top: 15px;
+        }
     }
     &__campo{
         border: none;
@@ -128,6 +134,7 @@ $lexend-semi: Lexend-Semi;
             width: 100%;
             margin: 0;
             padding: 5px;
+            border-radius: 2px;
         }
     }
     &__button_download button{
@@ -136,7 +143,7 @@ $lexend-semi: Lexend-Semi;
         font-family: $inter-semi;
 
         @include for-phone-only{
-            margin: 20px 0;
+            margin: 15px 0;
         }
     }
 }
@@ -148,7 +155,7 @@ $lexend-semi: Lexend-Semi;
     &__forma{
         
         @include for-phone-only{
-            margin: 25px 0;
+            margin: 20px 0;
         }
     }
 
@@ -219,4 +226,11 @@ $lexend-semi: Lexend-Semi;
 .accordion-button{
     font-family: $inter-semi;
     font-size: 1.3rem;
+}
+#qrCodeEl{
+
+    @include for-phone-only{
+        height: 120px!important;
+        width: 120px!important;
+    }
 }

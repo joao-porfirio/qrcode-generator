@@ -32,7 +32,7 @@
 }
 @media (max-width: 767.98px) {
   .main__container {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 .main__texto-qr {
@@ -47,7 +47,10 @@
     max-width: 100%;
     width: 100%;
     justify-content: flex-start;
-    margin-top: 30px;
+    margin-top: 15px;
+    padding: 10px;
+    max-height: 30vh;
+    height: auto;
   }
 }
 .main__logo-conteudo {
@@ -57,7 +60,7 @@
 }
 @media (max-width: 767.98px) {
   .main__logo-conteudo {
-    display: none;
+    margin: 0 4%;
   }
 }
 .main__logo {
@@ -68,9 +71,8 @@
 }
 @media (max-width: 767.98px) {
   .main__logo {
-    text-align: center;
-    font-size: 3.5rem;
-    margin-left: 0;
+    font-size: 2rem;
+    margin-left: 10px;
   }
 }
 .main__informacoes {
@@ -78,6 +80,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 767.98px) {
+  .main__informacoes {
+    margin-top: 15px;
+  }
 }
 .main__campo {
   border: none;
@@ -120,6 +127,7 @@
     width: 100%;
     margin: 0;
     padding: 5px;
+    border-radius: 2px;
   }
 }
 .main__button_download button {
@@ -129,7 +137,7 @@
 }
 @media (max-width: 767.98px) {
   .main__button_download button {
-    margin: 20px 0;
+    margin: 15px 0;
   }
 }
 
@@ -139,7 +147,7 @@
 }
 @media (max-width: 767.98px) {
   .qr-code__forma {
-    margin: 25px 0;
+    margin: 20px 0;
   }
 }
 .qr-code__frame {
@@ -205,6 +213,13 @@
 .accordion-button {
   font-family: Inter-Semi;
   font-size: 1.3rem;
+}
+
+@media (max-width: 767.98px) {
+  #qrCodeEl {
+    height: 120px !important;
+    width: 120px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
