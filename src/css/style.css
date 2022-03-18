@@ -47,7 +47,6 @@
     max-width: 100%;
     width: 100%;
     justify-content: space-evenly;
-    margin-top: 15px;
     padding: 10px;
     max-height: 30vh;
     height: 30vh;
@@ -80,11 +79,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-@media (max-width: 767.98px) {
-  .main__informacoes {
-    margin-top: 15px;
-  }
 }
 .main__campo {
   border: none;
@@ -137,19 +131,13 @@
   font-size: 1.8rem;
   font-family: Inter-Semi;
 }
-@media (max-width: 767.98px) {
-  .main__button_download button {
-    margin: 15px 0;
-  }
-}
-
 .qr-code {
   display: flex;
   justify-content: center;
 }
 @media (max-width: 767.98px) {
   .qr-code__forma {
-    margin: 20px 0;
+    margin: 0;
   }
 }
 .qr-code__frame {

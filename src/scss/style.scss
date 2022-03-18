@@ -59,7 +59,6 @@ $lexend-semi: Lexend-Semi;
             max-width: 100%;
             width: 100%;
             justify-content: space-evenly;
-            margin-top: 15px;
             padding: 10px;
             max-height: 30vh;
             height: 30vh;
@@ -92,7 +91,7 @@ $lexend-semi: Lexend-Semi;
         justify-content: center;
 
         @include for-phone-only{
-            margin-top: 15px;
+            
         }
     }
     &__campo{
@@ -145,7 +144,7 @@ $lexend-semi: Lexend-Semi;
         font-family: $inter-semi;
 
         @include for-phone-only{
-            margin: 15px 0;
+
         }
     }
 }
@@ -157,7 +156,7 @@ $lexend-semi: Lexend-Semi;
     &__forma{
         
         @include for-phone-only{
-            margin: 20px 0;
+            margin: 0;
         }
     }
 
