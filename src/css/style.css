@@ -25,14 +25,16 @@
 .main__container {
   background-color: #add8e6;
   max-height: 100vh;
-  height: 100vh;
-  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: row;
 }
 @media (max-width: 767.98px) {
   .main__container {
     flex-direction: column;
+    height: 100vh;
   }
 }
 .main__texto-qr {
@@ -47,9 +49,9 @@
     max-width: 100%;
     width: 100%;
     justify-content: space-evenly;
-    padding: 10px;
-    max-height: 30vh;
-    height: 30vh;
+    padding: 20px;
+    max-height: 25vh;
+    height: 25vh;
   }
 }
 .main__logo-conteudo {
