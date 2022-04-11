@@ -8,7 +8,7 @@ import qrcode1 from '../../src/assets/icons/qr-code.png'
 import logo from '../assets/icons/logo.png'
 export const Main = () => {
     //DOCS
-    //https://www.npmjs.com/package/qrcode.react
+
     const [campoQR, setCampoQR] = useState('');
 
     const [tipoFrame, setTipoFrame] = useState('');
@@ -104,7 +104,7 @@ export const Main = () => {
                                 </CAccordionHeader>
                                 <CAccordionBody>
                                     <article className="frame__buttons_renderizacao">
-                                        <CButton color="primary" shape="rounded-pill" value={"svg"} className="frame__botao" onClick={(e) => setRenderizacao(e.target.value)}>SVG</CButton>
+                                        {/* <CButton color="primary" shape="rounded-pill" value={"svg"} className="frame__botao" onClick={(e) => setRenderizacao(e.target.value)}>SVG</CButton> */}
                                         <CButton color="primary" shape="rounded-pill" value={"canvas"} className="frame__botao" onClick={(e) => setRenderizacao(e.target.value)}>CANVAS</CButton>
                                     </article>
                                 </CAccordionBody>
