@@ -6,4 +6,4 @@ Desenvolvimento baseado em ReactJS, CoreUI, Sass e QRCode.React
 
 ![QR Code](https://raw.githubusercontent.com/joao-porfirio/qrcode-generator/master/src/assets/img/projeto.PNG)
 
-Acesse o projeto em <a href="https://gerarqrcode.netlify.app/" target="_blank">https://gerarqrcode.netlify.app/</a>
+Acesse o projeto em <a target="_blank" href="https://gerarqrcode.netlify.app/" >https://gerarqrcode.netlify.app/</a>
