@@ -1,3 +1,7 @@
-# Gerador de QR Code.
+Gerador de QR Code
 
-Projeto desenvolvido utilizando ReactJS.
+Este projeto foi desenvolvido com o objetivo de facilitar a geração de QR Codes e também sua exportação e compartilhamento.
+
+Desenvolvimento baseado em ReactJS, CoreUI, Sass e QRCode.React
+
+![QR Code](https://raw.githubusercontent.com/joao-porfirio/qrcode-generator/master/src/assets/img/projeto.PNG)
