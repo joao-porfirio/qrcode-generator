@@ -7,10 +7,8 @@ import { CAccordion, CAccordionItem, CAccordionBody, CAccordionHeader, CButton }
 import qrcode1 from '../../src/assets/icons/qr-code.png'
 import logo from '../assets/icons/logo.png'
 export const Main = () => {
-    //DOCS
 
     const [campoQR, setCampoQR] = useState('');
-
     const [tipoFrame, setTipoFrame] = useState('');
     const [corFundoFrame, setCorFundoFrame] = useState('#FFFFFF');
     const [corFormaFrame, setCorFormaFrame] = useState('#000000');
@@ -104,7 +102,6 @@ export const Main = () => {
                                 </CAccordionHeader>
                                 <CAccordionBody>
                                     <article className="frame__buttons_renderizacao">
-                                        {/* <CButton color="primary" shape="rounded-pill" value={"svg"} className="frame__botao" onClick={(e) => setRenderizacao(e.target.value)}>SVG</CButton> */}
                                         <CButton color="primary" shape="rounded-pill" value={"canvas"} className="frame__botao" onClick={(e) => setRenderizacao(e.target.value)}>CANVAS</CButton>
                                     </article>
                                 </CAccordionBody>
