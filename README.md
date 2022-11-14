@@ -5,3 +5,5 @@ Este projeto foi desenvolvido com o objetivo de facilitar a geração de QR Code
 Desenvolvimento baseado em ReactJS, CoreUI, Sass e QRCode.React
 
 ![QR Code](https://raw.githubusercontent.com/joao-porfirio/qrcode-generator/master/src/assets/img/projeto.PNG)
+
+Acesse o projeto em https://gerarqrcode.netlify.app/
