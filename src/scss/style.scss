@@ -71,6 +71,7 @@ $lexend-semi: Lexend-Semi;
         display: flex;
         align-items: center;
         margin: 0 6%;
+        justify-content: center;
 
         @include for-phone-only{
             margin: 0 4%;
@@ -129,7 +130,7 @@ $lexend-semi: Lexend-Semi;
         max-height: 100%;
         width: 30%;
         margin: 20px 20px 20px 20px;
-        background: #1A1A1A;
+        background: #1F2937;
         border-radius: 30px;
 
         @include for-phone-only{
@@ -138,13 +139,13 @@ $lexend-semi: Lexend-Semi;
             margin: 0;
             padding: 5px;
             border-radius: 2px;
-            height: 70vh;
-            max-height: 70vh;
+            height: 75vh;
+            max-height: 75vh;
         }
     }
     &__button_download button{
-        padding: 15px;
-        font-size: 1.8rem;
+        padding: 10px 15px;
+        font-size: 1.5rem;
         font-family: $inter-semi;
 
         @include for-phone-only{
@@ -167,11 +168,14 @@ $lexend-semi: Lexend-Semi;
     &__frame{
         max-width: 100%;
         margin: 0 10%;
+
+        @include for-phone-only{
+            margin: 6% 10%;
+        }
     }
 }
 
 .frame{
-    
     &__header{
         display: flex;
         flex-direction: row;
@@ -238,4 +242,22 @@ $lexend-semi: Lexend-Semi;
         height: 120px!important;
         width: 120px!important;
     }
+}
+
+.accordion-button{
+    background-color: #374151!important;
+    color: #ECE7D7!important;
+    border-radius: 0.5rem;
+}
+.accordion-button::after{
+    background-color: #FFF!important;
+    border-radius: 10px;
+}
+.accordion-item{
+    border: none!important;
+}
+
+.accordion-button:focus {
+    border-color: transparent!important;
+    box-shadow: none!important;
 }
